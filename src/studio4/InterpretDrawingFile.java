@@ -19,6 +19,40 @@ public class InterpretDrawingFile {
 		chooser.showOpenDialog(null);
 		File f = new File(chooser.getSelectedFile().getPath());
 		Scanner in = new Scanner(f); //making Scanner with a File
-		
+				
+		while(in.hasNextLine()) {
+						
+			String shape = in.next(); 
+			System.out.println(shape); 
+			
+			double red = in.nextInt();
+			System.out.println(red);
+			
+			double green = in.nextInt(); 
+			System.out.println(green);
+			
+			double blue = in.nextInt(); 
+			System.out.println(blue);
+			
+			boolean filled = in.nextBoolean(); 
+			System.out.println(filled);
+			
+			double x = in.nextDouble();
+			System.out.println(x);
+			
+			double y = in.nextDouble(); 
+			System.out.println(y);
+			
+			double halfWidth = in.nextDouble(); 
+			System.out.println(halfWidth);
+			
+			double halfHeight = in.nextDouble(); 
+			System.out.println(halfHeight);
+			
+			
+				
+						
+		}
+
 	}
 }
